@@ -1,0 +1,6 @@
+{
+  "Name": "UnityBrokers_InsuranceHouseDemo",
+  "ProjectType": "Process",
+  "Description": "This process was developed using UiPath’s RE Framework to improve execution and manage end-to-end insurance creation for the client, Unity Brokers.",
+  "MainFile": "Main.xaml"
+}
