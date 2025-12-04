@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Jw7BynWpNUucBczVOyDYiw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/Duk8UW2lWjhFuwlAfmJw4g/9cx5lAC5wIWATq6xh5Lr6w/YnmnBrhH7pvDZY_5ccHL8kfWt1buTzESym48skQeORw" CVScreenId="a9959b43-6195-4108-894f-0bc377428722" CvTextArea="172, 218, 85, 13" CvTextArgument="New Quotation" CvType="Text" DesignTimeRectangle="173, 211, 189, 27" DesignTimeScaleFactor="1" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='                                                     New Quotation                                                 ' tag='A' /&gt;" Guid="aa29a91d-d041-427c-b03e-5ad91646d499" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a9959b43-6195-4108-894f-0bc377428722" CvTextArea="169, 184, 35, 13" CvTextArgument="Motor" CvType="Text" DesignTimeRectangle="143, 174, 219, 37" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='                                     Motor                                 ' class='font-weight-bold' tag='A' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Motor' /&gt;" Guid="bc671bd6-fe54-4d75-84ed-efc8fdcd3e92" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="5336ffe1d18ba425177009137350ce1d.png" xmlns="">0N1c-HmLUG0OO4J5bgsXPcA</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

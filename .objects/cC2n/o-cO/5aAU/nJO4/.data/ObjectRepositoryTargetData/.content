@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NmHwL5LChkqytBPZsB2y7w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae" CVScreenId="779aa4a7-0b89-412f-b6d8-1978475ac84f" CvElementArea="1191, 600, 294, 44" CvTextArea="1310, 615, 55, 13" CvTextArgument="SIGN IN" CvType="Button" DesignTimeRectangle="1193, 602, 290, 41" DesignTimeScaleFactor="1" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="9268b649-ddab-4f2b-8050-ec8ffad3b289" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sign In - https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="bb222340cbf88e1cf9fb51a27182396b.png" xmlns="">0LuMtgGH3eU6i94OsYFmfPA</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

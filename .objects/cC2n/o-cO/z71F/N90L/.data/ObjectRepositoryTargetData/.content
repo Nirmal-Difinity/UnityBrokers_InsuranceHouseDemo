@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="RsnSvV09o0-q9l3QNg2kXQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="290b5eb9-210e-4a64-b016-6a985b43d51a" CvElementArea="1100, 550, 424, 48" CvType="InputBox" DesignTimeRectangle="1103, 552, 421, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='VehHorsePwr' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="88389d79-8c3b-4cc4-8c11-4facf78d254d" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="290b5eb9-210e-4a64-b016-6a985b43d51a" CvTextArea="1101, 531, 127, 13" CvTextArgument="Vehicle Horse Power" CvType="Text" DesignTimeRectangle="1103, 530, 124, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehHorsePwr_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Vehicle Horse Power' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Vehicle Horse Power' /&gt;" Guid="4ea790c6-333d-4085-abb6-d8fc9ad4130d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="46f96debb26f6e03f6ee88c4b62c7e68.png" xmlns="">0MjoLjHhrH02iHshbWZO4pQ</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

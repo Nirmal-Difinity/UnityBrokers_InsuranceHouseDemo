@@ -1,0 +1,15 @@
+﻿{
+  "Name": "InsHouse - LoginPage",
+  "Type": "Screen",
+  "Id": "5aAUYDUM8kOuYinUxeX1_g",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/5aAUYDUM8kOuYinUxeX1_g",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/o-cOBNGLEUehU7_QHkwidw",
+  "Created": "2025-12-03T10:12:12.0089237Z",
+  "Updated": "2025-12-04T05:13:43.3096165Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

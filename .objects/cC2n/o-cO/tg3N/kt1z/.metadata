@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Transaction",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "kt1zoXvROU6Um0Er1y-WSg",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/kt1zoXvROU6Um0Er1y-WSg",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/tg3Nxh66DESCNnT1bojxqA",
+  "Created": "2025-12-03T10:45:38.563937Z",
+  "Updated": "2025-12-03T10:45:38.563937Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

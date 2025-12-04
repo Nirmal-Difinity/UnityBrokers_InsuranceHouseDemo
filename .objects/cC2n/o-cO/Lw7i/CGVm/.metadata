@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Next",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "CGVmnCUE_0OVkyGkkjoCtQ",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/CGVmnCUE_0OVkyGkkjoCtQ",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/Lw7iuTHm5USz80tinJV7qQ",
+  "Created": "2025-12-03T10:45:39.9239332Z",
+  "Updated": "2025-12-03T10:45:39.9239332Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

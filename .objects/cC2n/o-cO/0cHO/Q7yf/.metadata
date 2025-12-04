@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Proceed",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "Q7yfZELIaEiOp-Hm_KJYNw",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/Q7yfZELIaEiOp-Hm_KJYNw",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/0cHOtyhzI0SS9eqo1nlUcA",
+  "Created": "2025-12-03T10:45:38.7384902Z",
+  "Updated": "2025-12-03T10:45:38.7384902Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

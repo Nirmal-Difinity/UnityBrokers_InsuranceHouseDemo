@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-POAFHY1-EKT6edRqHISWw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/EJJ7ZJnXP_HNNplw34qfmskwyHz-dUkuKLCYhfAT6VZnMUhOZdwkBsGrWAqtuxVM" CVScreenId="0f2c86cb-ecac-4533-bec2-ec072040ef70" CvElementArea="1102, 757, 421, 43" CvType="InputBox" DesignTimeRectangle="1103, 759, 421, 40" DesignTimeScaleFactor="1" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-labelledby='select2-VehicleUsage-container' aria-role='combobox' tag='SPAN' /&gt;" Guid="41eeb6b6-9607-4589-aa55-1c24acaf7549" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0f2c86cb-ecac-4533-bec2-ec072040ef70" CvTextArea="1102, 738, 96, 15" CvTextArgument="Purpose Of use" CvType="Text" DesignTimeRectangle="1103, 736, 94, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehUsage_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Purpose Of use' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Purpose Of use' /&gt;" Guid="ba0e3132-1233-4074-9689-3bd1537bed1b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="b3afca565528efc306bb80781573d53c.png" xmlns="">0YqlQSZPciU6e8TGRAQn7yw</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

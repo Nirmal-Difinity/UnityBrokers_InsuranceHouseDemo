@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5SpHjJDnnkSOxkbYMpFtbg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="290b5eb9-210e-4a64-b016-6a985b43d51a" CvElementArea="651, 640, 421, 43" CvType="InputBox" DesignTimeRectangle="652, 642, 421, 40" DesignTimeScaleFactor="1" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-labelledby='select2-Vehicle_VehLicType-container' aria-role='combobox' tag='SPAN' /&gt;" Guid="1aa5b60d-2a12-4b97-a811-d3dcc5a4be4e" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="290b5eb9-210e-4a64-b016-6a985b43d51a" CvTextArea="651, 621, 142, 16" CvTextArgument="Individual Or Company" CvType="Text" DesignTimeRectangle="652, 620, 140, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehLicType_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Individual Or Company' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Individual Or Company' /&gt;" Guid="d24aecca-2a4b-4bfc-a640-5231e530286d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="064e6e9f6033e6514256f7c39c608bc8.png" xmlns="">0ZGzVOGriNUOAtWjjzHI2WQ</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

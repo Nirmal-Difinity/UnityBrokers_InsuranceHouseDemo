@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fsC3vS5WqEaHrhEk7RX4UA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="69c97b07-54ad-4683-a880-c5fb2a52e539" CvElementArea="1101, 582, 395, 48" CvType="InputBox" DesignTimeRectangle="1103, 584, 390, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='DriverLicExpDt' tag='INPUT' type='text' class='form-control flatpickr-input' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="fc5a39a0-ad6a-4e22-93f0-8127f2402015" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="69c97b07-54ad-4683-a880-c5fb2a52e539" CvTextArea="1102, 562, 211, 17" CvTextArgument="Driving License Expiry Date(Driver)" CvType="Text" DesignTimeRectangle="1103, 562, 210, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehDriverLicExpDt_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Driving License Expiry Date(Driver)' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Driving License Expiry Date(Driver)' /&gt;" Guid="1ea370a0-08ee-4c67-a6e4-16805df33625" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="fa7a6ef18ba3c7646cb959ebaea122d2.png" xmlns="">0NICmczWFCEKieoa4gvNKRw</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

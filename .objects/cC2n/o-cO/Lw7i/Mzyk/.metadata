@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Registration Type",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Id": "Mzykhh2YAUSIHBm7KYxrTQ",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/Mzykhh2YAUSIHBm7KYxrTQ",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/Lw7iuTHm5USz80tinJV7qQ",
+  "Created": "2025-12-03T10:45:39.6081684Z",
+  "Updated": "2025-12-03T10:45:39.6081684Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

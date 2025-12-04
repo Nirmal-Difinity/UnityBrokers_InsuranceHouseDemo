@@ -1,0 +1,15 @@
+﻿{
+  "Name": "InsHouse - Plan Details",
+  "Type": "Screen",
+  "Id": "SJauKatCkEaDFbNGbjqsyA",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/SJauKatCkEaDFbNGbjqsyA",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/o-cOBNGLEUehU7_QHkwidw",
+  "Created": "2025-12-03T11:06:39.7179291Z",
+  "Updated": "2025-12-04T05:13:42.5670737Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

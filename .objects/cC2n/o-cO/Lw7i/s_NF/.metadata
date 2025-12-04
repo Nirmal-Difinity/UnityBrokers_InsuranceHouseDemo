@@ -1,0 +1,13 @@
+﻿{
+  "Name": "OK",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "s_NFu2Bc5k63wBgye4YQbA",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/s_NFu2Bc5k63wBgye4YQbA",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/Lw7iuTHm5USz80tinJV7qQ",
+  "Created": "2025-12-03T10:50:39.3445382Z",
+  "Updated": "2025-12-03T10:50:39.3445382Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

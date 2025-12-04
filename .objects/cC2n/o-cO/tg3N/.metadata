@@ -1,0 +1,15 @@
+﻿{
+  "Name": "InsHouse - MainPage",
+  "Type": "Screen",
+  "Id": "tg3Nxh66DESCNnT1bojxqA",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/tg3Nxh66DESCNnT1bojxqA",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/o-cOBNGLEUehU7_QHkwidw",
+  "Created": "2025-12-03T10:45:38.5106001Z",
+  "Updated": "2025-12-04T05:13:41.5263164Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

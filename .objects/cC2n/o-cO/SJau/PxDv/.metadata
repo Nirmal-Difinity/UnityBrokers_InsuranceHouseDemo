@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Select Plan",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "PxDvBU1njUGjUW_11Ge65g",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/PxDvBU1njUGjUW_11Ge65g",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/SJauKatCkEaDFbNGbjqsyA",
+  "Created": "2025-12-03T11:06:39.7755198Z",
+  "Updated": "2025-12-03T11:06:39.7755198Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

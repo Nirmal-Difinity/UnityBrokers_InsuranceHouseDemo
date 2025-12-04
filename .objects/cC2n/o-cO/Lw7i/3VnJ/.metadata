@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Insured Date of Birth",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "3VnJKa4050K47531ssquHw",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/3VnJKa4050K47531ssquHw",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/Lw7iuTHm5USz80tinJV7qQ",
+  "Created": "2025-12-03T10:45:38.9342988Z",
+  "Updated": "2025-12-03T10:45:38.9342988Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

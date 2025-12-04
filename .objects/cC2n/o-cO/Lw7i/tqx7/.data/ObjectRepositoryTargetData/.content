@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QiZTTcRex0a3lxeKH0Zaeg" Reference="MipA3_KJdkWX330oaHlVvw/tqx73XZLYkOIEeG7wiRWBg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/EJJ7ZJnXP_HNNplw34qfmskwyHz-dUkuKLCYhfAT6VZnMUhOZdwkBsGrWAqtuxVM" ContentHash="WwGT4zDGYkepsfE3TcDAsA" DesignTimeRectangle="712, 458, 512, 210" DesignTimeScaleFactor="1" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-labelledby='swal2-title' aria-role='dialog' tag='DIV' /&gt;" Guid="c3fb9a0e-3ffa-42b8-9d10-1d4db965efff" Reference="MipA3_KJdkWX330oaHlVvw/tqx73XZLYkOIEeG7wiRWBg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector" Version="V6">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="b2d452cc6fe2ab6c1f13cbf48a968cab.png" xmlns="">0IcSRw43pTUqb2hDx-CieKw</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

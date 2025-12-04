@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Source of Power",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Id": "NtyANEtq2kS8UQ7jqI_s8w",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/NtyANEtq2kS8UQ7jqI_s8w",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/Lw7iuTHm5USz80tinJV7qQ",
+  "Created": "2025-12-03T10:45:39.8457559Z",
+  "Updated": "2025-12-03T10:45:39.8457559Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

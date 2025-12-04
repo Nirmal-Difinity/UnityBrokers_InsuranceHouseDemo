@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Vehicle Type",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Id": "qfTvGvcMyUy8faBNfbCycw",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/qfTvGvcMyUy8faBNfbCycw",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/z71FOSXZ7kC9XhE1bYqxsA",
+  "Created": "2025-12-03T11:06:40.2506641Z",
+  "Updated": "2025-12-03T11:06:40.2506641Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

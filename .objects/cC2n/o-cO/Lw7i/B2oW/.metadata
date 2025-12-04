@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Date of First Registrat…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "B2oWLU4kY02qNmI0oa85rw",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/B2oWLU4kY02qNmI0oa85rw",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/Lw7iuTHm5USz80tinJV7qQ",
+  "Created": "2025-12-03T10:45:39.7665892Z",
+  "Updated": "2025-12-03T10:45:39.7665892Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

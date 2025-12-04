@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qc5sM49Ty0e8dkO92ngHJQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/Duk8UW2lWjhFuwlAfmJw4g/9cx5lAC5wIWATq6xh5Lr6w/YnmnBrhH7pvDZY_5ccHL8kfWt1buTzESym48skQeORw" CVScreenId="dc869d4a-c9d0-4048-bed5-33e07f3809b9" CvElementArea="17, 262, 115, 100" CvTextArea="36, 327, 71, 13" CvTextArgument="Transaction" CvType="Button" DesignTimeRectangle="12, 259, 120, 110" DesignTimeScaleFactor="1" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='                                                                  Transaction                             ' class='font-weight-bold' tag='A' /&gt;" Guid="ae5083b5-4048-4543-88a8-3f46c5803513" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="ff178d72a1b9e923ac43ff9b944cb538.png" xmlns="">0aKaR-9wXBka-0j2j3q0CNg</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

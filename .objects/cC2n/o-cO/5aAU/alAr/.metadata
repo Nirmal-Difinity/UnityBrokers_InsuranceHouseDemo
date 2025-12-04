@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Login ID",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "alAruwR08UulGhCZucmJaw",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/alAruwR08UulGhCZucmJaw",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/5aAUYDUM8kOuYinUxeX1_g",
+  "Created": "2025-12-03T10:12:12.2075569Z",
+  "Updated": "2025-12-03T10:12:12.2075569Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
