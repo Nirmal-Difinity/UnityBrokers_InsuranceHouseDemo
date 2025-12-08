@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="InsuranceHouse_AdditionalDetails" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="InsuranceHouse_AdditionalDetails_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="InsuranceHouse_AdditionalDetails" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="InsuranceHouse_AdditionalDetails_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -25,6 +25,20 @@
       <x:String>System.Windows.Markup</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -50,13 +64,424 @@
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="InsuranceHouse_AdditionalDetails" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="InsuranceHouse_AdditionalDetails" sap:VirtualizedContainerService.HintSize="1119,3217" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="InsHouse - Additional Details" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,3194" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,3000" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NSelectItem DisplayName="Select Item 'Profession'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,204" sap2010:WorkflowViewState.IdRef="NSelectItem_6" Item="Others" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Version="V5">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="9">
+                  <x:String>Businessman</x:String>
+                  <x:String>Clerk / Sales</x:String>
+                  <x:String>Executive</x:String>
+                  <x:String>Housewife</x:String>
+                  <x:String>Not Working / Retired</x:String>
+                  <x:String>Others</x:String>
+                  <x:String>Software Professional</x:String>
+                  <x:String>Student</x:String>
+                  <x:String>Supervisor</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="233ef5a4-c4c1-4ab1-8707-6dac4aa5e695" ContentHash="n9LyJKoRJ0iKNgsMdV_Z1A" CvElementArea="651, 576, 422, 43" CvType="InputBox" DesignTimeRectangle="653, 585, 419, 30" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='textbox' idx='5' parentid='divWizard-p-2' tag='SPAN' /&gt;" Guid="0f8916e4-8039-442a-984c-eea204cd7d8d" InformativeScreenshot="e5a8383c1dd02a2cd1075a7149873d88.png" Reference="MipA3_KJdkWX330oaHlVvw/S69aDkpyF0SJukdaSVyiXw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="233ef5a4-c4c1-4ab1-8707-6dac4aa5e695" CvTextArea="651, 557, 65, 13" CvTextArgument="Profession" CvType="Text" DesignTimeRectangle="651, 557, 65, 13" ElementType="Text" Guid="28781a62-be3c-4efd-807f-9678d2eaefb9" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NSelectItem>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Driving License No(Driv…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="401011" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="69c97b07-54ad-4683-a880-c5fb2a52e539" ContentHash="pryDnCnptEKy9prk192DKA" CvElementArea="1101, 492, 424, 48" CvType="InputBox" DesignTimeRectangle="1103, 494, 421, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='DriverLicNo' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="37ae3e76-a245-4143-8e2d-0227c6949ac7" InformativeScreenshot="f38e397cddcaf88cf77274a574c757cb.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/UY_HJZiGC0GRUWVhe2tnSg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="69c97b07-54ad-4683-a880-c5fb2a52e539" CvTextArea="1102, 472, 159, 17" CvTextArgument="Driving License No(Driver)" CvType="Text" DesignTimeRectangle="1103, 472, 158, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehDriverLicNo_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Driving License No(Driver)' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Driving License No(Driver)' /&gt;" Guid="ef861f21-6403-4cc5-93e0-4f48ca420788" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Driving License Issue D…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="21/04/2002" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="69c97b07-54ad-4683-a880-c5fb2a52e539" ContentHash="fTdNNRLQbkOXoAMycaj6PA" CvElementArea="649, 582, 394, 48" CvType="InputBox" DesignTimeRectangle="652, 584, 390, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='DriverLicIssDt' tag='INPUT' type='text' class='form-control flatpickr-input' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="6d050c8e-1f72-4502-bcf4-3385c5dacf76" InformativeScreenshot="1d41b30f94cb5315983b98909ab7a6db.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/COEWb7JOlUOhJBq5-GKn_A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="69c97b07-54ad-4683-a880-c5fb2a52e539" CvTextArea="651, 562, 204, 17" CvTextArgument="Driving License I55ue Date(Driver)" CvType="Text" DesignTimeRectangle="652, 562, 203, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehDriverLicIssDt_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Driving License Issue Date(Driver)' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Driving License Issue Date(Driver)' /&gt;" Guid="75d28401-d3a9-4ca8-be41-9ffe2c18d50a" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Driving License Expiry …'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,246" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="18/04/2032" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="69c97b07-54ad-4683-a880-c5fb2a52e539" ContentHash="fsC3vS5WqEaHrhEk7RX4UA" CvElementArea="1101, 582, 395, 48" CvType="InputBox" DesignTimeRectangle="1103, 584, 390, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='DriverLicExpDt' tag='INPUT' type='text' class='form-control flatpickr-input' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="fc5a39a0-ad6a-4e22-93f0-8127f2402015" InformativeScreenshot="fa7a6ef18ba3c7646cb959ebaea122d2.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/lcG5pXabUUWhx594p8TeZQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="69c97b07-54ad-4683-a880-c5fb2a52e539" CvTextArea="1102, 562, 211, 17" CvTextArgument="Driving License Expiry Date(Driver)" CvType="Text" DesignTimeRectangle="1103, 562, 210, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehDriverLicExpDt_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Driving License Expiry Date(Driver)' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Driving License Expiry Date(Driver)' /&gt;" Guid="1ea370a0-08ee-4c67-a6e4-16805df33625" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NSelectItem DisplayName="Select Item 'Vehicle Risk Location'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,200" sap2010:WorkflowViewState.IdRef="NSelectItem_7" Item="Abu Dhabi" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Version="V5">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="24">
+                  <x:String>Abu Dhabi</x:String>
+                  <x:String>Ajman</x:String>
+                  <x:String>Dubai</x:String>
+                  <x:String>Fujairah</x:String>
+                  <x:String>Ras Al Khaimah</x:String>
+                  <x:String>Sharjah</x:String>
+                  <x:String>Um Al Quwain</x:String>
+                  <x:String>Other</x:String>
+                  <x:String>Al Jubai</x:String>
+                  <x:String>Al Ain</x:String>
+                  <x:String>GCC Countries States</x:String>
+                  <x:String>Muscat</x:String>
+                  <x:String>Maqta Area, Plot 14-B, Sector Maqta 1,2 - Abu Dhabi, UAE</x:String>
+                  <x:String>Various States in UAE</x:String>
+                  <x:String>Sakhair</x:String>
+                  <x:String>Buraimi</x:String>
+                  <x:String>Various States in Sultanate of Oman</x:String>
+                  <x:String>Beirut</x:String>
+                  <x:String>Cairo</x:String>
+                  <x:String>Hail</x:String>
+                  <x:String>Jakarta</x:String>
+                  <x:String>London</x:String>
+                  <x:String>Saifi</x:String>
+                  <x:String>Others</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="a0fb6f51-3d65-4970-a0bf-40893915b4c4" ContentHash="AuOlEqFkvU6jVei2iut10A" CvElementArea="200, 365, 421, 43" CvType="InputBox" DesignTimeRectangle="201, 374, 420, 29" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='textbox' idx='12' parentid='divWizard-p-2' tag='SPAN' /&gt;" Guid="54c4a42c-5a9a-48f3-a833-4c1e80c33b9e" InformativeScreenshot="96ba60b83ba56895b0466479b69cd5db.png" Reference="MipA3_KJdkWX330oaHlVvw/gtT2qPKwq0ea2Wj234SPPg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="a0fb6f51-3d65-4970-a0bf-40893915b4c4" CvTextArea="198, 345, 129, 13" CvTextArgument="Vehicle Risk Location" CvType="Text" DesignTimeRectangle="200, 344, 127, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehRiskLocation_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Vehicle Risk Location' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Vehicle Risk Location' /&gt;" Guid="6be9ba9c-4da0-46ab-b13f-f29926fea48c" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Plate Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_23" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="60988" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="f2ff10e7-5cca-4172-82e9-ce6929180112" ContentHash="qqzMWKdaskisqYG5_wdQGg" CvElementArea="199, 576, 424, 48" CvType="InputBox" DesignTimeRectangle="200, 578, 422, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='VehRegNo' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="77e2a7dd-46c2-48c4-8e79-ed1a89f0c1a7" InformativeScreenshot="ac1951880f507a2a613de33ca20acce3.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/pQr_wPqP10SmVB5_CZRdYQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="f2ff10e7-5cca-4172-82e9-ce6929180112" CvTextArea="199, 557, 86, 13" CvTextArgument="Plate Number" CvType="Text" DesignTimeRectangle="200, 556, 84, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehRegnNo_Lbl' tag='LABEL' type='' class='control-label' aaname='Plate Number' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Plate Number' /&gt;" Guid="a97eb6c0-5379-474b-afbc-85cdd1096615" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NSelectItem DisplayName="Select Item 'Vehicle Type'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,204" sap2010:WorkflowViewState.IdRef="NSelectItem_8" Item="LIGHT VEHICLE" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Version="V5">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="6">
+                  <x:String>LIGHT VEHICLE</x:String>
+                  <x:String>HEAVY VEHICLE</x:String>
+                  <x:String>BUS</x:String>
+                  <x:String>TRACTORS AND MECHANICAL DEVICES</x:String>
+                  <x:String>PEOPLE OF DETERMINATION VEHICLE</x:String>
+                  <x:String>MOTORCYCLES</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="a0fb6f51-3d65-4970-a0bf-40893915b4c4" ContentHash="aMDmOBWNxkWiwou0GecEaw" CvElementArea="650, 365, 423, 43" CvType="InputBox" DesignTimeRectangle="653, 374, 419, 29" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='textbox' idx='13' parentid='divWizard-p-2' tag='SPAN' /&gt;" Guid="afb2fe5e-d3ae-4f6f-9136-967b5fd655ad" InformativeScreenshot="930f392092b1b7f2b84302ce27c8eed9.png" Reference="MipA3_KJdkWX330oaHlVvw/qfTvGvcMyUy8faBNfbCycw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="a0fb6f51-3d65-4970-a0bf-40893915b4c4" CvTextArea="650, 345, 78, 16" CvTextArgument="Vehicle Type" CvType="Text" DesignTimeRectangle="652, 344, 75, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehType_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Vehicle  Type' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Vehicle Type' /&gt;" Guid="ff52bde7-e16c-4642-85df-d6a5860efdb1" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'Transaction Type'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,204" sap2010:WorkflowViewState.IdRef="NSelectItem_9" Item="New Vehicle Registration" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Version="V5">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="1">
+                  <x:String>New Vehicle Registration</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="00191bae-7fef-485d-96cb-8d8e8d6f0330" ContentHash="fPK9ni2pIE2PcS1ldJeDdg" CvElementArea="1102, 577, 421, 43" CvType="InputBox" DesignTimeRectangle="1104, 586, 419, 29" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='textbox' idx='14' parentid='divWizard-p-2' tag='SPAN' /&gt;" Guid="732afdd4-f03e-48a7-8627-96a25e215182" InformativeScreenshot="ab901ee603582406ec27cf793613beb3.png" Reference="MipA3_KJdkWX330oaHlVvw/l5vjWKxTxUajLDWGGkvcWQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="00191bae-7fef-485d-96cb-8d8e8d6f0330" CvTextArea="1102, 558, 105, 15" CvTextArgument="Transaction Type" CvType="Text" DesignTimeRectangle="1103, 556, 103, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehTransType_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Transaction Type' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Transaction Type' /&gt;" Guid="d4813648-06d9-4af2-8c02-b74fe1681ffb" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'TCF No'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="1980269076" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="290b5eb9-210e-4a64-b016-6a985b43d51a" ContentHash="67qmknwrlU23RqETc4wLwQ" CvElementArea="198, 550, 425, 48" CvType="InputBox" DesignTimeRectangle="200, 552, 422, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='AssrTcfNo' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="7e4f281d-0c66-4c38-9271-795e5da8a094" InformativeScreenshot="e3847bdaeb8a9d4c81bbd654dd84ba64.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/j1b7X40lgUiV0xpQhvcRQQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="290b5eb9-210e-4a64-b016-6a985b43d51a" CvTextArea="198, 532, 48, 12" CvTextArgument="TCF No" CvType="Text" DesignTimeRectangle="200, 530, 46, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Policy_PolAssrTcfNo_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='TCF No' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='TCF No' /&gt;" Guid="fee987d2-d1eb-4271-afcf-b52e3194bdd3" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Vehicle Horse Power'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="0" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="290b5eb9-210e-4a64-b016-6a985b43d51a" ContentHash="RsnSvV09o0-q9l3QNg2kXQ" CvElementArea="1100, 550, 424, 48" CvType="InputBox" DesignTimeRectangle="1103, 552, 421, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='VehHorsePwr' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="88389d79-8c3b-4cc4-8c11-4facf78d254d" InformativeScreenshot="46f96debb26f6e03f6ee88c4b62c7e68.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/N90LZ6-jY062EHzupL40gQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="290b5eb9-210e-4a64-b016-6a985b43d51a" CvTextArea="1101, 531, 127, 13" CvTextArgument="Vehicle Horse Power" CvType="Text" DesignTimeRectangle="1103, 530, 124, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehHorsePwr_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Vehicle Horse Power' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Vehicle Horse Power' /&gt;" Guid="4ea790c6-333d-4085-abb6-d8fc9ad4130d" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NSelectItem DisplayName="Select Item 'Individual Or Company'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,204" sap2010:WorkflowViewState.IdRef="NSelectItem_10" Item="Individual" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Version="V5">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="2">
+                  <x:String>Individual</x:String>
+                  <x:String>Company</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="0aa6e444-2a9a-450a-9b36-d4ac82707109" ContentHash="SAyGeR2aCkqZsAuHxqTphA" CvElementArea="651, 577, 422, 43" CvType="InputBox" DesignTimeRectangle="653, 586, 419, 30" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='textbox' idx='17' parentid='divWizard-p-2' tag='SPAN' /&gt;" Guid="4c9bf07a-dca8-4475-a12e-dd4c57c611ae" InformativeScreenshot="2e7886fdc7bf6f4eabcc72b6449060b6.png" Reference="MipA3_KJdkWX330oaHlVvw/Mh7uSzm5mUyW6rZ9Ucrtcg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="0aa6e444-2a9a-450a-9b36-d4ac82707109" CvTextArea="651, 558, 142, 16" CvTextArgument="Individual Or Company" CvType="Text" DesignTimeRectangle="652, 557, 140, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehLicType_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Individual Or Company' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Individual Or Company' /&gt;" Guid="ff2b3f98-97e7-454a-9fca-bf8ef347712d" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Engine Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="VK560079" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="290b5eb9-210e-4a64-b016-6a985b43d51a" ContentHash="kA2h_Bk4ZUW0kVgrtwGlCQ" CvElementArea="1101, 640, 423, 48" CvType="InputBox" DesignTimeRectangle="1103, 642, 421, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='VehEngineNo' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="3fd6c621-48a3-4848-ad57-c71d27b589f0" InformativeScreenshot="cc940339890b618036fced29cd99d00f.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/ZggTEs3ogEaCgzCg_xy-jA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="290b5eb9-210e-4a64-b016-6a985b43d51a" CvTextArea="1102, 621, 97, 16" CvTextArgument="Engine Number" CvType="Text" DesignTimeRectangle="1103, 620, 95, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehEngineNo_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Engine Number' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Engine Number' /&gt;" Guid="0e9b0a9b-07c8-489f-9880-171849ac9add" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <Sequence DisplayName="Driving License Upload" sap:VirtualizedContainerService.HintSize="450,61" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON - Driving License'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="f08eef4a-5cd2-43df-a40c-36dc16576e9c" ContentHash="FOxT9QshmkSZ4_JQnxdpeA" CvElementArea="988, 821, 47, 32" CvType="Button" DesignTimeRectangle="989, 822, 43, 30" DesignTimeScaleFactor="1" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;button' idx='3' isleaf='1' tag='BUTTON' /&gt;" Guid="ddeb0e97-7bde-49e1-bb09-ace9f5ec1200" InformativeScreenshot="770626c6af87874dfb27174f5508024e.png" Reference="MipA3_KJdkWX330oaHlVvw/MsHIMEE7K0i0m6b9ZVSijg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="f08eef4a-5cd2-43df-a40c-36dc16576e9c" CvTextArea="651, 794, 94, 15" CvTextArgument="Driving License" CvType="Text" DesignTimeRectangle="652, 792, 92, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Driving License' parentid='divWizard-p-2' tag='LABEL' type='' class='control-label mandatory' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Driving License' /&gt;" Guid="cc421701-b9af-4108-91cb-24e10d37df5b" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_20" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="C:\Users\nirmal\Documents\UiPath\UnityBrokers_InsuranceHouseDemo\Data\Input\DL.pdf" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="862d2c6e-047b-4dca-801c-0c8cec4f2469" ContentHash="J_K2mfAFP062FJ45Oal3oA" CvElementArea="191, 644, 784, 26" CvType="InputBox" DesignTimeRectangle="201, 650, 754, 15" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;" Guid="45dbe002-cf82-424e-bcca-bdff43623723" InformativeScreenshot="a27b39c728ccaf12ce188510ea5c3293.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/fhk5GxdVpEuC8fN3eeoNKg" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="862d2c6e-047b-4dca-801c-0c8cec4f2469" CvTextArea="137, 650, 55, 12" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="138, 649, 54, 15" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' matching:title='fuzzy' fuzzylevel:title='0.0' check:text='File &amp;amp;name:' /&gt;" Guid="c741f442-76e1-4336-8405-090bf2faf10b" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Open'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="862d2c6e-047b-4dca-801c-0c8cec4f2469" ContentHash="5eH-wIwEXkSgofa_gCKjTg" CvElementArea="987, 674, 89, 26" CvTextArea="1015, 680, 30, 15" CvTextArgument="Open" CvType="Button" DesignTimeRectangle="987, 674, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" Guid="1238b183-54ed-486f-8fdf-bf2a884cdea4" InformativeScreenshot="68cef6a1f550ba6ccd8cf2c806a4e71f.png" Reference="MipA3_KJdkWX330oaHlVvw/xlJ4o-fF4Em28bBt-bBcog" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, CV" Version="V6">
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <Sequence DisplayName="Registration Card Upload" sap:VirtualizedContainerService.HintSize="450,61" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON - Driving License'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="47e8b75f-b6dd-447c-b071-5108a40d1e0b" ContentHash="v-nrtXb_U0GSXzzZRxk8eA" CvElementArea="1102, 841, 339, 47" CvType="InputBox" DesignTimeRectangle="1103, 815, 337, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='DocUpload_108' tag='INPUT' type='text' class='form-control' placeholder='Browse..' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b80b47bf-6310-42db-9b34-e9f4bbda4d6d" InformativeScreenshot="ee912ee5994b88dd14a3aaf99c4c09a7.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/Iu6ceGtktEGLqsw70DN_Xw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="47e8b75f-b6dd-447c-b071-5108a40d1e0b" CvTextArea="1102, 821, 107, 16" CvTextArgument="Registration Card" CvType="Text" DesignTimeRectangle="1103, 792, 106, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Registration Card' parentid='divWizard-p-2' tag='LABEL' type='' class='control-label mandatory' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Registration Card' /&gt;" Guid="d11550c0-9cb4-4ae6-aa0c-906a50eebc1d" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_21" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="C:\Users\nirmal\Documents\UiPath\UnityBrokers_InsuranceHouseDemo\Data\Input\REG.pdf" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="862d2c6e-047b-4dca-801c-0c8cec4f2469" ContentHash="J_K2mfAFP062FJ45Oal3oA" CvElementArea="191, 644, 784, 26" CvType="InputBox" DesignTimeRectangle="201, 650, 754, 15" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;" Guid="45dbe002-cf82-424e-bcca-bdff43623723" InformativeScreenshot="a27b39c728ccaf12ce188510ea5c3293.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/fhk5GxdVpEuC8fN3eeoNKg" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="862d2c6e-047b-4dca-801c-0c8cec4f2469" CvTextArea="137, 650, 55, 12" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="138, 649, 54, 15" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' matching:title='fuzzy' fuzzylevel:title='0.0' check:text='File &amp;amp;name:' /&gt;" Guid="c741f442-76e1-4336-8405-090bf2faf10b" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Open'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1d054fe8-ff2a-41ac-b965-af4f75759496" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="862d2c6e-047b-4dca-801c-0c8cec4f2469" ContentHash="5eH-wIwEXkSgofa_gCKjTg" CvElementArea="987, 674, 89, 26" CvTextArea="1015, 680, 30, 15" CvTextArgument="Open" CvType="Button" DesignTimeRectangle="987, 674, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" Guid="1238b183-54ed-486f-8fdf-bf2a884cdea4" InformativeScreenshot="68cef6a1f550ba6ccd8cf2c806a4e71f.png" Reference="MipA3_KJdkWX330oaHlVvw/xlJ4o-fF4Em28bBt-bBcog" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, CV" Version="V6">
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <Sequence DisplayName="Emirates ID Upload" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON - Driving License'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="47e8b75f-b6dd-447c-b071-5108a40d1e0b" ContentHash="HJmHtz_ZgEaZ9m1BrBTQsw" CvElementArea="537, 939, 45, 32" CvType="Button" DesignTimeRectangle="538, 940, 43, 30" DesignTimeScaleFactor="1" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;button' idx='7' isleaf='1' tag='BUTTON' /&gt;" Guid="09a3a004-030d-4f4d-9ef4-3857ff55f1c4" InformativeScreenshot="5db369f59b48f11d15a8d3a0d8727ea0.png" Reference="MipA3_KJdkWX330oaHlVvw/rZY58e7YLUq7EkLjOu2GCg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="47e8b75f-b6dd-447c-b071-5108a40d1e0b" CvElementArea="199, 931, 338, 47" CvType="InputBox" DesignTimeRectangle="200, 932, 338, 45" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='DocUpload_109' tag='INPUT' /&gt;" Guid="2661dc67-6ec7-4cc0-ad8a-bc7ce5c29634" SearchSteps="Selector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_22" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="C:\Users\nirmal\Documents\UiPath\UnityBrokers_InsuranceHouseDemo\Data\Input\ID.pdf" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="862d2c6e-047b-4dca-801c-0c8cec4f2469" ContentHash="J_K2mfAFP062FJ45Oal3oA" CvElementArea="191, 644, 784, 26" CvType="InputBox" DesignTimeRectangle="201, 650, 754, 15" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;" Guid="45dbe002-cf82-424e-bcca-bdff43623723" InformativeScreenshot="a27b39c728ccaf12ce188510ea5c3293.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/fhk5GxdVpEuC8fN3eeoNKg" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="862d2c6e-047b-4dca-801c-0c8cec4f2469" CvTextArea="137, 650, 55, 12" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="138, 649, 54, 15" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' matching:title='fuzzy' fuzzylevel:title='0.0' check:text='File &amp;amp;name:' /&gt;" Guid="c741f442-76e1-4336-8405-090bf2faf10b" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Open'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="862d2c6e-047b-4dca-801c-0c8cec4f2469" ContentHash="5eH-wIwEXkSgofa_gCKjTg" CvElementArea="987, 674, 89, 26" CvTextArea="1015, 680, 30, 15" CvTextArgument="Open" CvType="Button" DesignTimeRectangle="987, 674, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" Guid="1238b183-54ed-486f-8fdf-bf2a884cdea4" InformativeScreenshot="68cef6a1f550ba6ccd8cf2c806a4e71f.png" Reference="MipA3_KJdkWX330oaHlVvw/xlJ4o-fF4Em28bBt-bBcog" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, CV" Version="V6">
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Edge" ContentHash="sf_lIqe6YUGlth1bvO9ibQ" IconBase64="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" InformativeScreenshot="893dd4098d057e8ba687f1fea675d0f6.jpg" Reference="MipA3_KJdkWX330oaHlVvw/z71FOSXZ7kC9XhE1bYqxsA" Selector="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" Url="https://channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" Version="V2">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
   </Sequence>
 </Activity>

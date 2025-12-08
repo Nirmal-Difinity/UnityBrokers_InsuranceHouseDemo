@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="XUSu7rh5n0CfTbJ7sUQgKQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/EJJ7ZJnXP_HNNplw34qfmskwyHz-dUkuKLCYhfAT6VZnMUhOZdwkBsGrWAqtuxVM" DesignTimeRectangle="168, 273, 1388, 1411" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='divWizard-p-0' tag='SECTION' /&gt;" Guid="1635cc1a-443c-440a-8b3e-8769147698c2" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="774a08ebd88cd2315fc22864f0f01051.png" xmlns="">0jljs3pva90yS-Pw4ax9v9w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

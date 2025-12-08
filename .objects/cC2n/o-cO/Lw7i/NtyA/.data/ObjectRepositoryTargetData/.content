@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="VLZwjKtZsEKR3gKN_kRpfA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="JfsYBuvGAEirhNeIbjrDfQ" Reference="MipA3_KJdkWX330oaHlVvw/NtyANEtq2kS8UQ7jqI_s8w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/EJJ7ZJnXP_HNNplw34qfmskwyHz-dUkuKLCYhfAT6VZnMUhOZdwkBsGrWAqtuxVM" CVScreenId="ceaa63a5-d603-4b30-a1b9-5c56fa5ace53" CvElementArea="651, 921, 421, 42" CvType="InputBox" DesignTimeRectangle="652, 923, 421, 40" DesignTimeScaleFactor="1" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-labelledby='select2-VehPowerSource-container' aria-role='combobox' tag='SPAN' /&gt;" Guid="dc9d46d4-8b29-48d8-84f9-c01e3455d514" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6">
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/EJJ7ZJnXP_HNNplw34qfmskwyHz-dUkuKLCYhfAT6VZnMUhOZdwkBsGrWAqtuxVM" CVScreenId="9399df29-0868-41a7-9103-e3a33ed65c0e" CvElementArea="651, 921, 421, 42" CvType="InputBox" DesignTimeRectangle="653, 930, 419, 30" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='textbox' css-selector='body&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;span&amp;gt;span&amp;gt;span' idx='20' parentid='divWizard-p-0' tag='SPAN' /&gt;" Guid="9196ebc8-fc33-4e02-aeca-7c1c778e4522" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
       <TargetAnchorable.Anchors>
         <scg:List x:TypeArguments="ITarget" Capacity="4">
-          <Target CVScreenId="ceaa63a5-d603-4b30-a1b9-5c56fa5ace53" CvTextArea="651, 902, 102, 12" CvTextArgument="Source of Power" CvType="Text" DesignTimeRectangle="652, 900, 101, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehPowerSource_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Source of Power' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Source of Power' /&gt;" Guid="72bd66f0-f571-4fe3-abe2-1e10449cd438" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="9399df29-0868-41a7-9103-e3a33ed65c0e" CvTextArea="651, 902, 102, 12" CvTextArgument="Source of Power" CvType="Text" DesignTimeRectangle="652, 900, 101, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehPowerSource_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Source of Power' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Source of Power' /&gt;" Guid="e938c4d4-deb9-4888-8d7d-2e37b8902de6" SearchSteps="FuzzySelector, CV" />
         </scg:List>
       </TargetAnchorable.Anchors>
-      <TargetAnchorable.PointOffset>
-        <PointOffset />
-      </TargetAnchorable.PointOffset>
-      <imageRef attrName="InformativeScreenshot" originalValue="e755cdaebb9c1f68d96e9518464fe19a.png" xmlns="">00aWoWnBW0ke3YyJuAD1-Rg</imageRef>
+      <imageRef attrName="InformativeScreenshot" originalValue="ab1ebfa6bf38b36f5ca5ff6eae85299a.png" xmlns="">0EJlludyOc0yKUoIvUfr0Zw</imageRef>
     </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>
 </ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Plate Number",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "pQr_wPqP10SmVB5_CZRdYQ",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/pQr_wPqP10SmVB5_CZRdYQ",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/z71FOSXZ7kC9XhE1bYqxsA",
+  "Created": "2025-12-08T05:14:22.4183237Z",
+  "Updated": "2025-12-08T05:14:22.4183237Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

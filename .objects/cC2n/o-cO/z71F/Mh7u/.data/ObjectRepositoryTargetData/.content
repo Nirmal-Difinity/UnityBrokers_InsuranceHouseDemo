@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="5SpHjJDnnkSOxkbYMpFtbg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="SAyGeR2aCkqZsAuHxqTphA" Reference="MipA3_KJdkWX330oaHlVvw/Mh7uSzm5mUyW6rZ9Ucrtcg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="290b5eb9-210e-4a64-b016-6a985b43d51a" CvElementArea="651, 640, 421, 43" CvType="InputBox" DesignTimeRectangle="652, 642, 421, 40" DesignTimeScaleFactor="1" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-labelledby='select2-Vehicle_VehLicType-container' aria-role='combobox' tag='SPAN' /&gt;" Guid="1aa5b60d-2a12-4b97-a811-d3dcc5a4be4e" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6">
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="0aa6e444-2a9a-450a-9b36-d4ac82707109" CvElementArea="651, 577, 422, 43" CvType="InputBox" DesignTimeRectangle="653, 586, 419, 30" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='textbox' idx='17' parentid='divWizard-p-2' tag='SPAN' /&gt;" Guid="4c9bf07a-dca8-4475-a12e-dd4c57c611ae" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
       <TargetAnchorable.Anchors>
         <scg:List x:TypeArguments="ITarget" Capacity="4">
-          <Target CVScreenId="290b5eb9-210e-4a64-b016-6a985b43d51a" CvTextArea="651, 621, 142, 16" CvTextArgument="Individual Or Company" CvType="Text" DesignTimeRectangle="652, 620, 140, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehLicType_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Individual Or Company' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Individual Or Company' /&gt;" Guid="d24aecca-2a4b-4bfc-a640-5231e530286d" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="0aa6e444-2a9a-450a-9b36-d4ac82707109" CvTextArea="651, 558, 142, 16" CvTextArgument="Individual Or Company" CvType="Text" DesignTimeRectangle="652, 557, 140, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehLicType_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Individual Or Company' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Individual Or Company' /&gt;" Guid="ff2b3f98-97e7-454a-9fca-bf8ef347712d" SearchSteps="FuzzySelector, CV" />
         </scg:List>
       </TargetAnchorable.Anchors>
-      <TargetAnchorable.PointOffset>
-        <PointOffset />
-      </TargetAnchorable.PointOffset>
-      <imageRef attrName="InformativeScreenshot" originalValue="064e6e9f6033e6514256f7c39c608bc8.png" xmlns="">0ZGzVOGriNUOAtWjjzHI2WQ</imageRef>
+      <imageRef attrName="InformativeScreenshot" originalValue="2e7886fdc7bf6f4eabcc72b6449060b6.png" xmlns="">0mxQjD2wJ7UyKbkjFZuNj9w</imageRef>
     </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>
 </ObjectRepositoryTargetData>

@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="AM1UjAA3s0SO892jKNtnVQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="n9LyJKoRJ0iKNgsMdV_Z1A" Reference="MipA3_KJdkWX330oaHlVvw/S69aDkpyF0SJukdaSVyiXw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="f3f95a77-bf70-418f-bae7-6fa665ca54da" CvElementArea="650, 634, 422, 43" CvType="InputBox" DesignTimeRectangle="652, 636, 421, 40" DesignTimeScaleFactor="1" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-labelledby='select2-PolAssrOccup-container' aria-role='combobox' tag='SPAN' /&gt;" Guid="3e5b986c-70e7-4667-b0f0-ff6f3721cdfd" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6">
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="233ef5a4-c4c1-4ab1-8707-6dac4aa5e695" CvElementArea="651, 576, 422, 43" CvType="InputBox" DesignTimeRectangle="653, 585, 419, 30" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='textbox' idx='5' parentid='divWizard-p-2' tag='SPAN' /&gt;" Guid="0f8916e4-8039-442a-984c-eea204cd7d8d" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
       <TargetAnchorable.Anchors>
         <scg:List x:TypeArguments="ITarget" Capacity="4">
-          <Target CVScreenId="f3f95a77-bf70-418f-bae7-6fa665ca54da" CvTextArea="651, 615, 65, 13" CvTextArgument="Profession" CvType="Text" DesignTimeRectangle="652, 614, 65, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Policy_PolAssrOccup_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Profession' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Profession' /&gt;" Guid="fb997e2f-f2f4-4855-943a-0c55b0244c74" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="233ef5a4-c4c1-4ab1-8707-6dac4aa5e695" CvTextArea="651, 557, 65, 13" CvTextArgument="Profession" CvType="Text" DesignTimeRectangle="651, 557, 65, 13" ElementType="Text" Guid="28781a62-be3c-4efd-807f-9678d2eaefb9" SearchSteps="CV" TargetType="ComputerVisionBased" />
         </scg:List>
       </TargetAnchorable.Anchors>
-      <TargetAnchorable.PointOffset>
-        <PointOffset />
-      </TargetAnchorable.PointOffset>
-      <imageRef attrName="InformativeScreenshot" originalValue="699f41ada2480dfa00aa24a1db4d8ce9.png" xmlns="">09vUVXJ9-p0CI6Qsb6yv22w</imageRef>
+      <imageRef attrName="InformativeScreenshot" originalValue="e5a8383c1dd02a2cd1075a7149873d88.png" xmlns="">0Yhi8sywdrU6pQwnTPUVa8A</imageRef>
     </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>
 </ObjectRepositoryTargetData>

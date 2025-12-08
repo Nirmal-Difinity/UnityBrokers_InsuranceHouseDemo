@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Gender",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Id": "NEAeKIZQ502EQgxIrVv6Jg",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/NEAeKIZQ502EQgxIrVv6Jg",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/Lw7iuTHm5USz80tinJV7qQ",
+  "Created": "2025-12-05T07:22:16.0356981Z",
+  "Updated": "2025-12-05T07:22:39.0664667Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

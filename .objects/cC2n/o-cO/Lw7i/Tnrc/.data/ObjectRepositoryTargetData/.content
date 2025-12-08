@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7yuTUq7VGEizvwsey9BU1Q" Reference="MipA3_KJdkWX330oaHlVvw/Tnrc6UvEo0WfHNt0-v2Z1g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/EJJ7ZJnXP_HNNplw34qfmskwyHz-dUkuKLCYhfAT6VZnMUhOZdwkBsGrWAqtuxVM" CVScreenId="e1461075-2ec2-4bc6-af31-b96e13045e05" CvElementArea="1102, 461, 422, 43" CvType="InputBox" DesignTimeRectangle="1104, 470, 419, 30" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='textbox' idx='2' parentid='divWizard-p-0' tag='SPAN' /&gt;" Guid="2125480f-9cca-4863-b0f8-f6840563a16a" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e1461075-2ec2-4bc6-af31-b96e13045e05" CvTextArea="1102, 441, 68, 16" CvTextArgument="Nationality" CvType="Text" DesignTimeRectangle="1103, 440, 66, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Policy_PolAssrNation_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Nationality' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Nationality' /&gt;" Guid="714f02b1-48a5-410b-91ae-94d49d9f3ca2" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="59bb0b391aa208c184a40a471086d467.png" xmlns="">0w6Cm8eVIr0OkXRoZl0tnbw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

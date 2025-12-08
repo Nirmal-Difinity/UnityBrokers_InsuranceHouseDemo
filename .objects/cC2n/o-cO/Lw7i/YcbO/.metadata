@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Warning !",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "YcbOooZ9-UOG22YKGKCvgQ",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/YcbOooZ9-UOG22YKGKCvgQ",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/Lw7iuTHm5USz80tinJV7qQ",
+  "Created": "2025-12-04T06:48:28.4825846Z",
+  "Updated": "2025-12-04T06:48:28.4825846Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

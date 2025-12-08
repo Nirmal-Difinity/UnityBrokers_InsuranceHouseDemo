@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Vehicle Weight",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Id": "j0gjyDzjp066PsQAlXF_vQ",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/j0gjyDzjp066PsQAlXF_vQ",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/Lw7iuTHm5USz80tinJV7qQ",
+  "Created": "2025-12-04T05:40:12.5858304Z",
+  "Updated": "2025-12-04T05:40:12.5858304Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="sN2ZkRY_T06yka6DFshP5A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="fPK9ni2pIE2PcS1ldJeDdg" Reference="MipA3_KJdkWX330oaHlVvw/l5vjWKxTxUajLDWGGkvcWQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="290b5eb9-210e-4a64-b016-6a985b43d51a" CvElementArea="1102, 466, 422, 43" CvType="InputBox" DesignTimeRectangle="1103, 468, 421, 40" DesignTimeScaleFactor="1" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-labelledby='select2-TransType-container' aria-role='combobox' tag='SPAN' /&gt;" Guid="e9a559fb-7bb5-4309-bcbe-92a0364a0a0c" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6">
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="00191bae-7fef-485d-96cb-8d8e8d6f0330" CvElementArea="1102, 577, 421, 43" CvType="InputBox" DesignTimeRectangle="1104, 586, 419, 29" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='textbox' idx='14' parentid='divWizard-p-2' tag='SPAN' /&gt;" Guid="732afdd4-f03e-48a7-8627-96a25e215182" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
       <TargetAnchorable.Anchors>
         <scg:List x:TypeArguments="ITarget" Capacity="4">
-          <Target CVScreenId="290b5eb9-210e-4a64-b016-6a985b43d51a" CvTextArea="1102, 447, 105, 15" CvTextArgument="Transaction Type" CvType="Text" DesignTimeRectangle="1103, 445, 103, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehTransType_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Transaction Type' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Transaction Type' /&gt;" Guid="9633f373-ae24-47fb-b63c-fdefd52c8184" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="00191bae-7fef-485d-96cb-8d8e8d6f0330" CvTextArea="1102, 558, 105, 15" CvTextArgument="Transaction Type" CvType="Text" DesignTimeRectangle="1103, 556, 103, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Vehicle_VehTransType_Lbl' tag='LABEL' type='' class='control-label mandatory' aaname='Transaction Type' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Transaction Type' /&gt;" Guid="d4813648-06d9-4af2-8c02-b74fe1681ffb" SearchSteps="FuzzySelector, CV" />
         </scg:List>
       </TargetAnchorable.Anchors>
-      <TargetAnchorable.PointOffset>
-        <PointOffset />
-      </TargetAnchorable.PointOffset>
-      <imageRef attrName="InformativeScreenshot" originalValue="6a6e53018fd06ed38c69c5ee36ed362d.png" xmlns="">0LL4XV1YJS0KkJrz8K2LDAg</imageRef>
+      <imageRef attrName="InformativeScreenshot" originalValue="ab901ee603582406ec27cf793613beb3.png" xmlns="">0VKhWwEFxpE6xOqmxB6h9FQ</imageRef>
     </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>
 </ObjectRepositoryTargetData>
