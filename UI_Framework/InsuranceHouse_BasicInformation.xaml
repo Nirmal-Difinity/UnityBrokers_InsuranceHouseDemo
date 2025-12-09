@@ -1,4 +1,12 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="InsuranceHouse_BasicInformation" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="InsuranceHouse_BasicInformation_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="InsuranceHouse_BasicInformation" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property sap2010:Annotation.AnnotationText="Transaction item to be processed." Name="in_TransactionItem" Type="InArgument(ui:QueueItem)" />
+    <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>InsuranceHouse_BasicInformation_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -38,6 +46,7 @@
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
       <x:String>System.ComponentModel</x:String>
       <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -85,27 +94,38 @@
       <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
       <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="InsuranceHouse_BasicInformation" sap:VirtualizedContainerService.HintSize="1119,5218" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="InsuranceHouse_BasicInformation" sap:VirtualizedContainerService.HintSize="1119,4604" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="InsHouse - Basic Information" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,5195" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="531ae9f7-4668-4205-93e0-22a4fd745f13" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="InsHouse - Basic Information" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,4581" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="531ae9f7-4668-4205-93e0-22a4fd745f13" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,5001" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,4387" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Assured Name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Text="SALEM KHALIFA SALEM RASHED" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Assured Name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Text="[in_TransactionItem.SpecificContent(&quot;Assured Name&quot;).ToString]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/EJJ7ZJnXP_HNNplw34qfmskwyHz-dUkuKLCYhfAT6VZnMUhOZdwkBsGrWAqtuxVM" CVScreenId="3e8dc942-c939-449d-b3ea-7307513e1383" ContentHash="AKbI1gj1VUay-GlhkXkxZQ" CvElementArea="199, 365, 423, 49" CvType="InputBox" DesignTimeRectangle="200, 367, 422, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='PolAssrName' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="44dc0a68-c3e3-4e99-b4d6-e19d34646ca7" InformativeScreenshot="d7307d54852a0aed837f94131a6fc3a6.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/JSdzDJYUeUyJrEfj7QDJ0A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
                   <uix:TargetAnchorable.Anchors>
@@ -119,7 +139,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Insured Date of Birth'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Text="01/01/1974" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Insured Date of Birth'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Text="[in_TransactionItem.SpecificContent(&quot;DateofBirth&quot;).ToString]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/EJJ7ZJnXP_HNNplw34qfmskwyHz-dUkuKLCYhfAT6VZnMUhOZdwkBsGrWAqtuxVM" CVScreenId="3e8dc942-c939-449d-b3ea-7307513e1383" ContentHash="qy7nq-F3GkKGbcvCI_1IKw" CvElementArea="198, 455, 282, 48" CvType="InputBox" DesignTimeRectangle="200, 457, 278, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='PolAssrDob' tag='INPUT' type='text' class='form-control flatpickr-input' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="665308dd-6196-466c-bca3-fead2d0d9c97" InformativeScreenshot="fb2f580e3f3fcd8cc191ba1137b88606.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/3VnJKa4050K47531ssquHw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
                   <uix:TargetAnchorable.Anchors>
@@ -133,7 +153,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NSelectItem DisplayName="Select Item 'Gender'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,204" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Male" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Version="V5">
+            <uix:NSelectItem DisplayName="Select Item 'Gender'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,199" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[in_TransactionItem.SpecificContent(&quot;Gender&quot;).ToString]" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Version="V5">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="2">
                   <x:String>Female</x:String>
@@ -150,7 +170,7 @@
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NSelectItem DisplayName="Select Item 'Nationality'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,204" sap2010:WorkflowViewState.IdRef="NSelectItem_10" Item="United Arab Emirates" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Version="V5">
+            <uix:NSelectItem DisplayName="Select Item 'Nationality'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,199" sap2010:WorkflowViewState.IdRef="NSelectItem_10" Item="[in_TransactionItem.SpecificContent(&quot;Nationality&quot;).ToString]" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Version="V5">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="50">
                   <x:String>South Africa</x:String>
@@ -215,7 +235,7 @@
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Address'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Text="Abu Dhabi" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Address'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Text="[in_TransactionItem.SpecificContent(&quot;License place of issue&quot;).ToString]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/EJJ7ZJnXP_HNNplw34qfmskwyHz-dUkuKLCYhfAT6VZnMUhOZdwkBsGrWAqtuxVM" CVScreenId="3e8dc942-c939-449d-b3ea-7307513e1383" ContentHash="7GvqHFpDvU-NLIMVSqcZQQ" CvElementArea="199, 545, 873, 48" CvType="InputBox" DesignTimeRectangle="200, 547, 873, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='Address' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="6360fbe3-e4a2-4065-9d8b-a3edb7064406" InformativeScreenshot="72b2b610f6c9311a51fbfb7ba359b590.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/NA3uFPkB6kGwNdNRqB0CXg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
                   <uix:TargetAnchorable.Anchors>
@@ -229,7 +249,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NSelectItem DisplayName="Select Item 'Emirate'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,204" sap2010:WorkflowViewState.IdRef="NSelectItem_11" Item="Abu Dhabi" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Version="V5">
+            <uix:NSelectItem DisplayName="Select Item 'Emirate'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,199" sap2010:WorkflowViewState.IdRef="NSelectItem_11" Item="[in_TransactionItem.SpecificContent(&quot;Place of registration&quot;).ToString]" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Version="V5">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="7">
                   <x:String>Abu Dhabi</x:String>
@@ -251,7 +271,7 @@
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Mobile Number'" EmptyFieldMode="[UiPath.UIAutomationNext.Enums.NEmptyFieldMode.None]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Text="508037025" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Mobile Number'" EmptyFieldMode="[UiPath.UIAutomationNext.Enums.NEmptyFieldMode.None]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Text="[in_TransactionItem.SpecificContent(&quot;Mobile Number&quot;).ToString]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/EJJ7ZJnXP_HNNplw34qfmskwyHz-dUkuKLCYhfAT6VZnMUhOZdwkBsGrWAqtuxVM" CVScreenId="42c38cdc-8787-40b3-b7bd-2778ff3b8591" ContentHash="mhx9lNRiOUyD4Wff4gDTCA" CvElementArea="649, 635, 425, 47" CvType="InputBox" DesignTimeRectangle="652, 636, 421, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='PolAssrMob' tag='INPUT' type='text' class='form-control' placeholder='Example : 971xxxxxxx' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="45b38072-6b59-4e31-a982-177bf05f2d23" InformativeScreenshot="55fdbff2ccf917cc94eae19cc9727650.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/jZvx2mh2nk2Zw_VHrBPl9A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
                   <uix:TargetAnchorable.Anchors>
@@ -265,7 +285,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="3" DisplayName="Type Into 'Emirates ID'" EmptyFieldMode="[UiPath.UIAutomationNext.Enums.NEmptyFieldMode.None]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Text="1974-7959051-1[k(tab)]" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="3" DisplayName="Type Into 'Emirates ID'" EmptyFieldMode="[UiPath.UIAutomationNext.Enums.NEmptyFieldMode.None]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Text="[string.Format(&quot;{0}[k(enter)]&quot;, in_TransactionItem.SpecificContent(&quot;Emirates ID&quot;).ToString)]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/EJJ7ZJnXP_HNNplw34qfmskwyHz-dUkuKLCYhfAT6VZnMUhOZdwkBsGrWAqtuxVM" CVScreenId="42c38cdc-8787-40b3-b7bd-2778ff3b8591" ContentHash="_pMQ7GnAi0-o1XAZbkBCQw" CvElementArea="198, 724, 426, 48" CvType="InputBox" DesignTimeRectangle="200, 726, 422, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='AssrCivilId' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="9fd513a1-83a6-49af-96f3-e74507e03ff2" InformativeScreenshot="5a2a3714cbaf36f10c7222d5978af973.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/wlB3taZe1ky5sumBW4Smnw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
                   <uix:TargetAnchorable.Anchors>
@@ -279,7 +299,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NCheckState DisplayName="Check App State 'Information×Ensure EID …'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,645" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Version="V5">
+            <uix:NCheckState DisplayName="Check App State 'Information×Ensure EID …'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,61" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Version="V5">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,253" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
@@ -316,12 +336,12 @@
               </uix:NCheckState.Target>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="3" DisplayName="Type Into 'E-mail Address'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Text="yadhutest@gmail.com" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="3" DisplayName="Type Into 'E-mail Address'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Text="[in_TransactionItem.SpecificContent(&quot;Email&quot;).ToString]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/EJJ7ZJnXP_HNNplw34qfmskwyHz-dUkuKLCYhfAT6VZnMUhOZdwkBsGrWAqtuxVM" CVScreenId="42c38cdc-8787-40b3-b7bd-2778ff3b8591" ContentHash="sBjgF_eWtkOm59gJRoNR8w" CvElementArea="649, 724, 425, 48" CvType="InputBox" DesignTimeRectangle="652, 726, 421, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='PolAssrMail' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="5f9fbd57-4468-439a-984c-499f0b79ff4a" InformativeScreenshot="c2f1198f4ebd34c09599edda89ba9a38.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/J-ZzYEuDFEGWgJQlVXnjUA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
                   <uix:TargetAnchorable.Anchors>
@@ -350,7 +370,7 @@
                 </uix:SearchedElement>
               </uix:NMouseScroll.SearchedElement>
             </uix:NMouseScroll>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Chassis Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Text="JN8AY2NY3F9133738[k(tab)]" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Chassis Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Text="[string.Format(&quot;{0}[k(enter)]&quot;, in_TransactionItem.SpecificContent(&quot;Chasis Number&quot;).ToString)]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/EJJ7ZJnXP_HNNplw34qfmskwyHz-dUkuKLCYhfAT6VZnMUhOZdwkBsGrWAqtuxVM" CVScreenId="0f2c86cb-ecac-4533-bec2-ec072040ef70" ContentHash="4Fro-9D3NUK-FOWNGkZuZQ" CvElementArea="199, 497, 424, 48" CvType="InputBox" DesignTimeRectangle="200, 499, 422, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='VehicleChassisNo' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="4cf5c634-065f-4c8d-a215-a4beeb8de358" InformativeScreenshot="e3acd30f2c18927b497dc459f15f20a2.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/dU4j4V_V9Ua9mtNQfIcrzQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
                   <uix:TargetAnchorable.Anchors>
@@ -381,7 +401,7 @@
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NSelectItem DisplayName="Select Item 'Registration Place'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,204" sap2010:WorkflowViewState.IdRef="NSelectItem_17" Item="Abu Dhabi" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Version="V5">
+            <uix:NSelectItem DisplayName="Select Item 'Registration Place'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,199" sap2010:WorkflowViewState.IdRef="NSelectItem_17" Item="[in_TransactionItem.SpecificContent(&quot;Place of registration&quot;).ToString]" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Version="V5">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="9">
                   <x:String>Abu Dhabi</x:String>
@@ -405,7 +425,7 @@
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NSelectItem DisplayName="Select Item 'Registration Type'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,204" sap2010:WorkflowViewState.IdRef="NSelectItem_13" Item="Individual" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Version="V5">
+            <uix:NSelectItem DisplayName="Select Item 'Registration Type'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,199" sap2010:WorkflowViewState.IdRef="NSelectItem_13" Item="[in_TransactionItem.SpecificContent(&quot;Client Type&quot;).ToString]" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Version="V5">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="2">
                   <x:String>Commercial</x:String>
@@ -422,7 +442,7 @@
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Date of First Registrat…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Text="19/08/2015" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Date of First Registrat…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,250" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Text="[in_TransactionItem.SpecificContent(&quot;Date of First Registration&quot;).ToString]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/EJJ7ZJnXP_HNNplw34qfmskwyHz-dUkuKLCYhfAT6VZnMUhOZdwkBsGrWAqtuxVM" CVScreenId="0f2c86cb-ecac-4533-bec2-ec072040ef70" ContentHash="K__79vLUiU-EGagUyK4w_g" CvElementArea="1100, 936, 247, 48" CvType="InputBox" DesignTimeRectangle="1103, 938, 240, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='VehRegnDt' tag='INPUT' type='text' class='form-control flatpickr-input' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="180b51c4-bd1d-440a-98ed-e57ebf6347f2" InformativeScreenshot="fb07eafe47a505f1ccb15541a58db119.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/B2oWLU4kY02qNmI0oa85rw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
                   <uix:TargetAnchorable.Anchors>
@@ -436,7 +456,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NSelectItem DisplayName="Select Item 'Claim free years / disc…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,204" sap2010:WorkflowViewState.IdRef="NSelectItem_14" Item="0 Years" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Version="V5">
+            <uix:NSelectItem DisplayName="Select Item 'Claim free years / disc…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,199" sap2010:WorkflowViewState.IdRef="NSelectItem_14" Item="[in_TransactionItem.SpecificContent(&quot;Years without claim&quot;).ToString]" ScopeIdentifier="531ae9f7-4668-4205-93e0-22a4fd745f13" Version="V5">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="7">
                   <x:String>0 Years</x:String>

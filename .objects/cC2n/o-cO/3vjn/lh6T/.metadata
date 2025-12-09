@@ -1,0 +1,13 @@
+﻿{
+  "Name": "AED 2,205.00",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "lh6TNYlGHEmcB5j2TUq9fQ",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/lh6TNYlGHEmcB5j2TUq9fQ",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/3vjniensh0ObwP1X53jMyA",
+  "Created": "2025-12-08T09:28:22.2730165Z",
+  "Updated": "2025-12-08T09:28:22.2730165Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
