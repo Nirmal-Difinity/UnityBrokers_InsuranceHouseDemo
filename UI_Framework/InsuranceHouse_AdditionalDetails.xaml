@@ -112,19 +112,19 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="InsuranceHouse_AdditionalDetails" sap:VirtualizedContainerService.HintSize="1119,4099" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="InsuranceHouse_AdditionalDetails" sap:VirtualizedContainerService.HintSize="1281,3418" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="InsHouse - Additional Details" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,4076" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="InsHouse - Additional Details" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,3395" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,3882" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,3201" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -160,7 +160,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NSelectItem>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Driving License No(Driv…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="401011" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Driving License No(Driv…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="[in_TransactionItem.SpecificContent(&quot;Driving License No Driver&quot;).ToString]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="69c97b07-54ad-4683-a880-c5fb2a52e539" ContentHash="pryDnCnptEKy9prk192DKA" CvElementArea="1101, 492, 424, 48" CvType="InputBox" DesignTimeRectangle="1103, 494, 421, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='DriverLicNo' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="37ae3e76-a245-4143-8e2d-0227c6949ac7" InformativeScreenshot="f38e397cddcaf88cf77274a574c757cb.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/UY_HJZiGC0GRUWVhe2tnSg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
                   <uix:TargetAnchorable.Anchors>
@@ -174,7 +174,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Driving License Issue D…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="21/04/2002" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Driving License Issue D…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="[in_TransactionItem.SpecificContent(&quot;Driving License Issue Date Driver&quot;).ToString]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="69c97b07-54ad-4683-a880-c5fb2a52e539" ContentHash="fTdNNRLQbkOXoAMycaj6PA" CvElementArea="649, 582, 394, 48" CvType="InputBox" DesignTimeRectangle="652, 584, 390, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='DriverLicIssDt' tag='INPUT' type='text' class='form-control flatpickr-input' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="6d050c8e-1f72-4502-bcf4-3385c5dacf76" InformativeScreenshot="1d41b30f94cb5315983b98909ab7a6db.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/COEWb7JOlUOhJBq5-GKn_A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
                   <uix:TargetAnchorable.Anchors>
@@ -188,7 +188,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Driving License Expiry …'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="18/04/2032" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Driving License Expiry …'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="[in_TransactionItem.SpecificContent(&quot;Driving License Expiry Date Driver&quot;).ToString]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="69c97b07-54ad-4683-a880-c5fb2a52e539" ContentHash="fsC3vS5WqEaHrhEk7RX4UA" CvElementArea="1101, 582, 395, 48" CvType="InputBox" DesignTimeRectangle="1103, 584, 390, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='DriverLicExpDt' tag='INPUT' type='text' class='form-control flatpickr-input' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="fc5a39a0-ad6a-4e22-93f0-8127f2402015" InformativeScreenshot="fa7a6ef18ba3c7646cb959ebaea122d2.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/lcG5pXabUUWhx594p8TeZQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
                   <uix:TargetAnchorable.Anchors>
@@ -202,7 +202,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NSelectItem DisplayName="Select Item 'Vehicle Risk Location'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,204" sap2010:WorkflowViewState.IdRef="NSelectItem_7" Item="Abu Dhabi" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Version="V5">
+            <uix:NSelectItem DisplayName="Select Item 'Vehicle Risk Location'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,199" sap2010:WorkflowViewState.IdRef="NSelectItem_7" Item="[in_TransactionItem.SpecificContent(&quot;vehicle Risk Location&quot;).ToString]" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Version="V5">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="24">
                   <x:String>Abu Dhabi</x:String>
@@ -241,7 +241,7 @@
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Plate Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_23" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="60988" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Plate Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_23" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="[in_TransactionItem.SpecificContent(&quot;Plate Number&quot;).ToString]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="f2ff10e7-5cca-4172-82e9-ce6929180112" ContentHash="qqzMWKdaskisqYG5_wdQGg" CvElementArea="199, 576, 424, 48" CvType="InputBox" DesignTimeRectangle="200, 578, 422, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='VehRegNo' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="77e2a7dd-46c2-48c4-8e79-ed1a89f0c1a7" InformativeScreenshot="ac1951880f507a2a613de33ca20acce3.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/pQr_wPqP10SmVB5_CZRdYQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
                   <uix:TargetAnchorable.Anchors>
@@ -292,7 +292,7 @@
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'TCF No'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="1980269076" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'TCF No'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="[in_TransactionItem.SpecificContent(&quot;TCF No&quot;).ToString]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="290b5eb9-210e-4a64-b016-6a985b43d51a" ContentHash="67qmknwrlU23RqETc4wLwQ" CvElementArea="198, 550, 425, 48" CvType="InputBox" DesignTimeRectangle="200, 552, 422, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='AssrTcfNo' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="7e4f281d-0c66-4c38-9271-795e5da8a094" InformativeScreenshot="e3847bdaeb8a9d4c81bbd654dd84ba64.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/j1b7X40lgUiV0xpQhvcRQQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
                   <uix:TargetAnchorable.Anchors>
@@ -337,7 +337,7 @@
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Engine Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="VK560079" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Engine Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="5cc7ffe6-d674-49d5-9a52-79d7fe3e476b" Text="[in_TransactionItem.SpecificContent(&quot;Engine Number&quot;).ToString]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/RgN2ccs8HrUjYxDnFYcplQ" CVScreenId="290b5eb9-210e-4a64-b016-6a985b43d51a" ContentHash="kA2h_Bk4ZUW0kVgrtwGlCQ" CvElementArea="1101, 640, 423, 48" CvType="InputBox" DesignTimeRectangle="1103, 642, 421, 45" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='VehEngineNo' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="3fd6c621-48a3-4848-ad57-c71d27b589f0" InformativeScreenshot="cc940339890b618036fced29cd99d00f.png" IsResponsive="True" Reference="MipA3_KJdkWX330oaHlVvw/ZggTEs3ogEaCgzCg_xy-jA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
                   <uix:TargetAnchorable.Anchors>
@@ -441,10 +441,10 @@
                 </uix:NClick.Target>
               </uix:NClick>
             </Sequence>
-            <Sequence DisplayName="Emirates ID Upload" sap:VirtualizedContainerService.HintSize="450,737" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence DisplayName="Emirates ID Upload" sap:VirtualizedContainerService.HintSize="450,61" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
