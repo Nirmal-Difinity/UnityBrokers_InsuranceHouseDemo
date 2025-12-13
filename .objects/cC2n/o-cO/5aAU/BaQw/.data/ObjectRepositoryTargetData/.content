@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="h37JEFAuuU-Rv2dbRPKF2g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/dZlb-SyRczRRxvrfYt551A/NQwwFd4j2iKmfEaBrtCcwgXKpWJ9AFvLtz6QXNpnFQ1gMgrbsMZl-BKZx76D8AdCpOJwFfN52jbC3BTsk7SBwQ" CVScreenId="a9103da9-9dfb-4fe7-b059-a8cfb83e9e70" CvElementArea="713, 697, 509, 43" CvTextArea="931, 708, 73, 16" CvTextArgument="BVERIFY" CvType="Button" DesignTimeRectangle="714, 698, 508, 40" DesignTimeScaleFactor="1" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='btnValidateOtp' tag='BUTTON' /&gt;" Guid="0766d890-ea65-470b-a8ce-5f105223deda" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="6e03144fef31de9de72ed3ea1ff7d6af.png" xmlns="">0NoHl9AGZOEGGcI3aZRTLdQ</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

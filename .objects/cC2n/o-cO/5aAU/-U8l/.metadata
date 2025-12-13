@@ -1,0 +1,13 @@
+﻿{
+  "Name": "INPUT txtOtpKey",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "-U8luL35Wk6psq_e8WdkSQ",
+  "Reference": "MipA3_KJdkWX330oaHlVvw/-U8luL35Wk6psq_e8WdkSQ",
+  "ParentRef": "MipA3_KJdkWX330oaHlVvw/5aAUYDUM8kOuYinUxeX1_g",
+  "Created": "2025-12-13T09:24:39.41228Z",
+  "Updated": "2025-12-13T09:24:39.41228Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

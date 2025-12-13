@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="InsuranceHouse_Login" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="InsuranceHouse_Login_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="InsuranceHouse_Login" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="InsuranceHouse_Login_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -37,6 +37,8 @@
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
       <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -81,21 +83,38 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="InsuranceHouse_Login" sap:VirtualizedContainerService.HintSize="1119,970" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="InsuranceHouse_Login" sap:VirtualizedContainerService.HintSize="1119,1689" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="InsHouse - LoginPage" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,947" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="f3d804c5-f385-4dea-ae80-85b39cba3a7c" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="InsHouse - LoginPage" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1666" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="f3d804c5-f385-4dea-ae80-85b39cba3a7c" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,753" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1472" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="str_Otp" />
+            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -129,9 +148,37 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign In'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3d804c5-f385-4dea-ae80-85b39cba3a7c" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign In'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3d804c5-f385-4dea-ae80-85b39cba3a7c" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae" CVScreenId="779aa4a7-0b89-412f-b6d8-1978475ac84f" ContentHash="NmHwL5LChkqytBPZsB2y7w" CvElementArea="1191, 600, 294, 44" CvTextArea="1310, 615, 55, 13" CvTextArgument="SIGN IN" CvType="Button" DesignTimeRectangle="1193, 602, 290, 41" DesignTimeScaleFactor="1" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="9268b649-ddab-4f2b-8050-ec8ffad3b289" InformativeScreenshot="bb222340cbf88e1cf9fb51a27182396b.png" Reference="MipA3_KJdkWX330oaHlVvw/nJO4Q8E-BUGPvjlZGSk1-g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sign In - https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="416,275" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Please enter a valid OTP." Title="Get Otp" TopMost="False">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[str_Otp]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="3" DisplayName="Type Into 'INPUT txtOtpKey'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="f3d804c5-f385-4dea-ae80-85b39cba3a7c" Text="[str_Otp]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/dZlb-SyRczRRxvrfYt551A/NQwwFd4j2iKmfEaBrtCcwgXKpWJ9AFvLtz6QXNpnFQ1gMgrbsMZl-BKZx76D8AdCpOJwFfN52jbC3BTsk7SBwQ" CVScreenId="a9103da9-9dfb-4fe7-b059-a8cfb83e9e70" ContentHash="TNHfQNxKBECoyFPRopZiVw" CvElementArea="712, 648, 510, 35" CvType="InputBox" DesignTimeRectangle="714, 649, 508, 34" DesignTimeScaleFactor="1" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtOtpKey' tag='INPUT' /&gt;" Guid="ce132d02-7cac-4cf4-9ed8-86da9a7527ad" InformativeScreenshot="4fa3f32ae8bfe1c87055ad53c9268a89.png" Reference="MipA3_KJdkWX330oaHlVvw/-U8luL35Wk6psq_e8WdkSQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="a9103da9-9dfb-4fe7-b059-a8cfb83e9e70" CvElementArea="713, 697, 509, 43" CvTextArea="931, 708, 73, 16" CvTextArgument="BVERIFY" CvType="Button" DesignTimeRectangle="714, 698, 508, 40" ElementType="Button" FullSelectorArgument="&lt;webctrl id='btnValidateOtp' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnValidateOtp' tag='BUTTON' type='submit' class='btn btn-primary btn-block btn-signin-modal' aaname='Verify' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='VERIFY' /&gt;" Guid="fa298aa5-dc3a-45b9-8adb-c2665c0144fa" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAgAAAAAsCAYAAAATiQCeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOiSURBVHhe7dxNa11VFAZgf5GUqhPFgL/AqTNBRZwIatDYVtCp4MiJX4j1A4VIB9pBSEYita3SUqmI1YIttUhptQQsKlh7dF2zk51997knV2883JznhYfmrL3One43ScltF9bPNQDAsCgAADBA2wrA6Utnm2feXWsWDi43tz/+HgAw5+JOf/qdtdEdn9/5mwUgDu577sNm3+KRZv/S0eaOgysAwJyLOz3u9rjj8xKwWQCiHcRC7WUAYL7FHf/EW6vjBWDhwLLv/AFgj4o7Pu76sQIQvyeovQAA7A1x1ysAADAwCgAADJACAAADpAAAwAApAAAwQAoAAAyQAgAAA6QAAMAAKQDQo49OXW4m5c9bTfPpN1ebe19Y23wnJf+cXHk2KTvZy3fK3dqslknv7eQMmD0FAHp06+8L/sbvN5tT3/9cdf7KL6NL8asf1sdKQP45ufIsJZ/VpOxkntI1q2nbaZsDu0MBgB5F4qKvnYVH3/h8tBOJEnDXoX/mkXI3zSNds5qUtrPyOdI1q0npmgG7SwGAHkV2WgAiD75yfDRPKffbZpFyXkppOyufI12zNvleSn4O7D4FAHoUOXPxevUsPPbmF6OdlCgE6SyS706aRcp5KaXtrHyOdM0mSbvpX+D/pQBAjyLxH/3y3/vnLl//dbSTMqkApOSzfF5LbS+ftc1TarNa8r3afu0c2F0KAPRo2pQFIJI/p69zKbWzXFsm7XbNuky7D8yOAgA9KnPh2o3m4ddONve/9Elz7NurG9Ot5AUgvV/7OpdSO8ul1Oa1WaRr1mXafWB2FADoUZkXP/568+yBl49tTLfSVgBS8rMkpXaWS2k7K58jXbMu0+4Ds6MAQI/KvP/Zxc2zZz84szHdSlkAQko5T1JqZ7mUtrPyOdI16zLtPjA7CgD0KP4QUJnj311rVr78sfnj5vjhI6+fHPuMlHKeTEptL5/lZ+VzpGvWZdp9YHYUAOjRifM/jS7BneTK+m/b/hogwH+hAECP7jy00jz06onRj/a73PP8avUzAP4NBQAABkgBAIABUgAAYIAUAAAYIAUAAAZIAQCAAVIAAGCAFAAAGCAFAAAGSAEAgAGqFoCFA8vN/qWj1RcAgPkWd3zc9WMF4KnDa82+xSPVlwCA+RZ3/JOHV8cLwOlLZ5u7l5ZHC34SAAB7Q9zpcbfHHR93/VgBSCVg8e21ZuHg8uj3BADAfIs7Pb7zzy//sK0AAADDoAAAwOCca/4CjQhCXbTUKIcAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Verify'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3d804c5-f385-4dea-ae80-85b39cba3a7c" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="channel.insurancehouse.ae/IIRIS/dZlb-SyRczRRxvrfYt551A/NQwwFd4j2iKmfEaBrtCcwgXKpWJ9AFvLtz6QXNpnFQ1gMgrbsMZl-BKZx76D8AdCpOJwFfN52jbC3BTsk7SBwQ" CVScreenId="a9103da9-9dfb-4fe7-b059-a8cfb83e9e70" ContentHash="h37JEFAuuU-Rv2dbRPKF2g" CvElementArea="713, 697, 509, 43" CvTextArea="931, 708, 73, 16" CvTextArgument="BVERIFY" CvType="Button" DesignTimeRectangle="714, 698, 508, 40" DesignTimeScaleFactor="1" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='btnValidateOtp' tag='BUTTON' /&gt;" Guid="0766d890-ea65-470b-a8ce-5f105223deda" InformativeScreenshot="6e03144fef31de9de72ed3ea1ff7d6af.png" Reference="MipA3_KJdkWX330oaHlVvw/BaQwwPQ5B0y8bVq6S_XAWQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6">
                   <uix:TargetAnchorable.PointOffset>
                     <uix:PointOffset />
                   </uix:TargetAnchorable.PointOffset>
