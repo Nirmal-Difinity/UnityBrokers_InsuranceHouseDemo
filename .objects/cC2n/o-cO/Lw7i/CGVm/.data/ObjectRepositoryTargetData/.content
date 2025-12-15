@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="SD8qb8ib4Emv8R4Loy6nRQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="pFJQvK2-H0SyUIt4CMmgtg" Reference="MipA3_KJdkWX330oaHlVvw/CGVmnCUE_0OVkyGkkjoCtQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/EJJ7ZJnXP_HNNplw34qfmskwyHz-dUkuKLCYhfAT6VZnMUhOZdwkBsGrWAqtuxVM" CVScreenId="ceaa63a5-d603-4b30-a1b9-5c56fa5ace53" CvElementArea="1454, 999, 104, 40" CvTextArea="1491, 1011, 31, 12" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="1456, 1000, 100, 37" DesignTimeScaleFactor="1" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Next' aria-role='menuitem' tag='A' /&gt;" Guid="4c829a5a-9d27-4e66-bcc4-36f7fc419610" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6">
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="channel.insurancehouse.ae/IIRIS/xZyz2zBVUn7uhNk-AYiIqFRph5y1HGjWvoCVmmdrNO8/uwCUKmcB24dy2yT9lGXcfw/EJJ7ZJnXP_HNNplw34qfmskwyHz-dUkuKLCYhfAT6VZnMUhOZdwkBsGrWAqtuxVM" CVScreenId="ceaa63a5-d603-4b30-a1b9-5c56fa5ace53" CvElementArea="1454, 999, 104, 40" CvTextArea="1491, 1011, 31, 12" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="1456, 1000, 100, 37" DesignTimeScaleFactor="1" ElementType="Text" ElementVisibilityArgument="[UiPath.UIAutomationNext.Enums.NElementVisibility.Interactive]" FullSelectorArgument="&lt;webctrl aaname='Next' aria-role='menuitem' tag='A' /&gt;" Guid="4c829a5a-9d27-4e66-bcc4-36f7fc419610" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://channel.insurancehouse.ae' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
       <TargetAnchorable.PointOffset>
         <PointOffset />
       </TargetAnchorable.PointOffset>
-      <imageRef attrName="InformativeScreenshot" originalValue="7f0f794df7789bee59b4470e93be9f3e.png" xmlns="">0JlBg45Isl0yjVnS9EeVgSQ</imageRef>
+      <imageRef attrName="InformativeScreenshot" originalValue="7f0f794df7789bee59b4470e93be9f3e.png" xmlns="">09Vqc_cmU10u3e8MtermB5w</imageRef>
     </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>
 </ObjectRepositoryTargetData>
